@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-/*
- 🟢 Verde — #3FA110
- 🟩 Verde escuro — #146E37
- ⚪ Branco — #FFFFFF
-*/
-
-
-
-a {
-    color: rgb(0, 0, 0);
-}
-
 header {
     background-color: #3FA110;
     width: 100%;
@@ -24,9 +12,10 @@ header {
     position: fixed;
     align-items: center;
     gap: 30px;
-    justify-content: ROW;
+    justify-content: center;
+    margin-bottom: 80px;
+    z-index: 1000;
 }
-
 
 #logo {
     width: 150px;
@@ -38,7 +27,7 @@ header {
     width: 70px;
     margin-left: 30px;
     cursor: pointer;
-    margin-left: 30px;
+    
 }
 
 #menu {
@@ -60,7 +49,7 @@ a:hover {
     text-decoration: underline;
 }
 
-button {
+#botao-header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #3FA110;
     height: 50px;
@@ -74,8 +63,7 @@ button {
     box-shadow: 0 0 10px rgb(38, 192, 17);
 
 }
-
-button:hover {
+#botao-header:hover {
     background-color: transparent;
     transition: 0.4s;
     border: 2px rgb(221, 255, 221);
@@ -134,113 +122,17 @@ h1 {
     color: #fff;
 }
 
-/*----banner sessão 1------*/
-#banner {
+
+#botão-main{
     display: flex;
-    background-color: #348051;
-    background-repeat: repeat;
-    background-size: cover;
+    color: #000000;
+    height: 50px;
+    width: 150px;
+    font-size: 12x;
 }
-
-#div-caminhao {
+#botão-main2{
     display: flex;
-    align-items: center;
-    color: #65D930;
-    gap: 10px;
-}
-
-#div-caminhao p {
-    padding-top: 35px;
-    font-weight: 700;
-}
-
-#div-caminhao img {
-    width: 40px;
-}
-
-#divtexto {
-    padding: 0 10px 0 50px;
-    width: 700px;
-    height: 70vh;
-    color: white;
-    display: flex;
-    text-align: start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#divtexto h2 {
-    font-size: 47px;
-    margin-bottom: 15px;
-}
-
-#divtexto p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.botoes {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
-
-.botoes button {
-    gap: 50px;
-    width: 25%;
-    height: 45px;
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: -5px 7px 21px 1px rgba(0, 0, 0, 0.151);
-    font-size: 15px;
-}
-
-#botao-abrirconta {
-    background-color: #173623;
-    color: white;
-}
-
-#botao-abrirconta:hover {
-    transition: 0.6s;
-    background-color: rgb(93, 167, 58);
-    color: white;
-}
-
-.botoes button:hover {
-    transition: 0.6s;
-    border: solid rgb(255, 255, 255) 2px;
-    background-color: rgb(93, 167, 58);
-    color: white;
-    transform: translateY(-5px);
-}
-
-#divimg img {
-    width: 720px;
-    padding-top: 0px;
-    border-radius: 100% 0% 47% 53% / 0% 100% 0% 100%;
-    box-shadow: -14px 10px 15px 2px rgba(0, 0, 0, 0.15);
-
-}
-
-/*motivos pra escolher o sicredi - sessão 2*/
-
-#titulo-sobre {
-    text-align: center;
-}
-
-#sobre-nos-container {
-    display: flex;
-    gap: 20px;
-}
-
-.card-sobre {
-    background-color: grey;
-}
-
-#botao-sobre {
-    display: flex;
-    justify-content: center;
-}
+    color: #000000;
+    height: 50px;
+    width: 150px;
+    font-size: 12x;}

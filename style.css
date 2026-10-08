@@ -1,19 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
 * {
-    margin: 0%;
     padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
-}
-
-/*
- 🟢 Verde — #3FA110
- 🟩 Verde escuro — #146E37
- ⚪ Branco — #FFFFFF
-*/
-
-
-
-a {
-    color: rgb(0, 0, 0);
 }
 
 header {
@@ -22,9 +13,13 @@ header {
     height: 100px;
     display: flex;
     position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     align-items: center;
     gap: 30px;
-    justify-content: ROW;
+    justify-content: center;
+
 }
 
 
@@ -134,113 +129,49 @@ h1 {
     color: #fff;
 }
 
-/*----banner sessão 1------*/
 #banner {
-    display: flex;
-    background-color: #348051;
-    background-repeat: repeat;
-    background-size: cover;
+    margin-top: 95px;
+    width: 100%;
+    height: 100%;
 }
 
-#div-caminhao {
+#banner img{
+  width: 100%;
+
+}
+
+h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #3FA110;
+text-align: center;
+margin-top: 25px;
+font-size: 20px;}
+
+p {font-size: 40px;
+    font-family: "Google Sans", sans-serif;
+    text-align: center;
+
+
+}
+
+.secao {background-color: #e5ffd4;
+    margin-top: 30px;
     display: flex;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-    color: #65D930;
-    gap: 10px;
-}
-
-#div-caminhao p {
-    padding-top: 35px;
-    font-weight: 700;
-}
-
-#div-caminhao img {
-    width: 40px;
-}
-
-#divtexto {
-    padding: 0 10px 0 50px;
-    width: 700px;
-    height: 70vh;
-    color: white;
-    display: flex;
-    text-align: start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#divtexto h2 {
-    font-size: 47px;
-    margin-bottom: 15px;
-}
-
-#divtexto p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.botoes {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
-
-.botoes button {
+    flex-wrap: wrap;
     gap: 50px;
-    width: 25%;
-    height: 45px;
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: -5px 7px 21px 1px rgba(0, 0, 0, 0.151);
-    font-size: 15px;
 }
-
-#botao-abrirconta {
-    background-color: #173623;
-    color: white;
-}
-
-#botao-abrirconta:hover {
-    transition: 0.6s;
-    background-color: rgb(93, 167, 58);
-    color: white;
-}
-
-.botoes button:hover {
-    transition: 0.6s;
-    border: solid rgb(255, 255, 255) 2px;
-    background-color: rgb(93, 167, 58);
-    color: white;
-    transform: translateY(-5px);
-}
-
-#divimg img {
-    width: 720px;
-    padding-top: 0px;
-    border-radius: 100% 0% 47% 53% / 0% 100% 0% 100%;
-    box-shadow: -14px 10px 15px 2px rgba(0, 0, 0, 0.15);
-
-}
-
-/*motivos pra escolher o sicredi - sessão 2*/
-
-#titulo-sobre {
-    text-align: center;
-}
-
-#sobre-nos-container {
+.artigo {
     display: flex;
-    gap: 20px;
-}
+    background-color: #efffc9;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 5px #105200;
+    flex-direction: column;
+    align-items: center; }
 
-.card-sobre {
-    background-color: grey;
-}
+.ftartigo {width: 80px;
+    height: 50px;}
 
-#botao-sobre {
-    display: flex;
-    justify-content: center;
-}
