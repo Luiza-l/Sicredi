@@ -17,7 +17,7 @@ header {
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 header #logo {
