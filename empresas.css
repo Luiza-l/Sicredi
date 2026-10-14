@@ -215,3 +215,86 @@ header #criar:hover {
 header h1 {
     color: #fff;
 }
+
+
+div{
+    background-color: #004e00;
+   
+}
+
+.paragrafo{
+    font-size: 25px;
+    width: 65%;
+    padding: 200px;
+    padding-bottom:60px;
+    
+    
+}
+
+#padaria{
+    align-items: end;
+    width: 35%;
+    padding-top: 200px;
+
+
+}
+
+#padaria img{
+    
+    padding-block-end: 100px;
+    border-radius: 100%; 
+
+
+}
+
+
+.foto{
+    display: flex;
+}
+
+.paragrafo h3{
+    color: #8ace6f;
+    padding-bottom:20px ;
+
+}
+
+.paragrafo p{
+    color: #fff;
+    padding-bottom:40px;
+
+}
+
+.paragrafo h1{
+    padding-bottom:30px ;
+}
+
+.soluçoes{
+    display: flex;
+    text-align: center;
+   margin: 100px;
+}
+
+.card{
+    text-align: center;
+        width: 800px;
+        height: 470px;
+        background-color:#2d551d;
+        margin: 15px;
+        display: inline-block;
+        color: rgb(213, 226, 210);
+        border-radius: 30px; 
+}
+
+.card img{
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.soluçoes p{
+    font-size: 20px;
+}
+
+.soluçoes h3{
+    font-size: 30px;
+    color: #032003;
+}
