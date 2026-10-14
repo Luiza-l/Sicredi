@@ -19,7 +19,7 @@ header {
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 header #logo {
@@ -87,7 +87,7 @@ main {
 
 /* ---banner */
 #apresentacao-sobre {
-    background-color: #eef7ea;
+    background-color: #e4f5dd;
     padding: 70px;
 }
 
@@ -129,6 +129,7 @@ main {
 
 #texto-historia {
     width: 50%;
+    
 }
 
 #imagem-historia img {
@@ -142,9 +143,10 @@ main {
 }
 
 .descricao-historia {
-    color: #4b5d50;
+    color: #2e3631;
     font-size: 18px;
     margin-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ----Números do Sicredi--- */
@@ -165,6 +167,7 @@ main {
 .paragrafo-numeros {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -174,16 +177,18 @@ main {
     padding: 70px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 50px;
 }
 
 .numero-card {
     width: 50%;
     padding: 25px;
+    
 }
 
 .numero-card strong {
     color: #238b00;
-    font-size: 44px;
+    font-size: 55px;
     font-weight: normal;
 }
 
@@ -192,10 +197,48 @@ main {
     display: block;
     font-size: 20px;
     margin: 6px 0 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .numero-card p {
     color: #222;
     font-size: 15px;
     font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#formulário{
+   margin-top:20px ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:#3FA110; 
+    justify-content: space-between;
+    
+    
+   
+    
+}
+#imagem {
+    width: 400px;
+    
+}
+#foto-form{
+    width: 450px;
+    height: 310px;
+    border-radius: 20px ;
+    object-fit: cover;
+  }
+form{
+    background-color: #ffffff;
+    width: 250px;
+    height: 80px;
+   
+}
+#fonte{
+    justify-content: center;
+    
 }
