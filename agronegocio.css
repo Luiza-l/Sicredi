@@ -121,7 +121,7 @@ header #menu {
     color: #fff;
     width: 50%;
     height: 100%;
-    padding: 35px 40px 30px 50px;
+    padding: 60px 40px 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,18 +137,18 @@ header #menu {
 }
 
 #div-caminhao img {
-    width: 45px;
+    width: 35px;
 }
 
 #divtexto #div-caminhao p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
 }
 
 #divtexto h2 {
-    font-size: 48px;
+    font-size: 35px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -231,14 +231,14 @@ header #menu {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: right center;
+    object-position: right ;
     border-radius: 100% 0% 47% 53% / 0% 100% 0% 100%;
     box-shadow: -14px 10px 15px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------Sobre: Seção 2------------*/
 #secao-sobre {
-    background-color: #f0f8ec;
+    background-color: #edffe4;
     padding: 55px 7%;
     display: flex;
     flex-direction: column;
@@ -285,8 +285,7 @@ header #menu {
 
 .card-sobre {
     background-color: #fff;
-    width: 20%;
-    flex-grow: 1;
+    width: 23.5%;
     padding: 22px;
     border: 1px solid #d7e5d2;
 
@@ -304,6 +303,9 @@ header #menu {
     border-right: 2px solid #348051;
 }
 
+.card-sobre p{
+    font-size: 1px;
+}
 .icone-card {
     background-color: #e7f5df;
     width: 48px;
@@ -334,11 +336,12 @@ header #menu {
 }
 
 #botao-sobre {
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #173623;
     color: #fff;
-    width: 220px;
-    padding: 14px;
+    width: 280px;
+    padding: 19px;
     margin-top: 0;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -360,8 +363,8 @@ header #menu {
 
 /* ---------Abra sua conta------------*/
 #abra-sua-conta {
-    width: 77.4%;
-    height: 600px;
+    width: 76%;
+    height: 400px;
     margin: 70px 11.3%;
     background-color: #087b0b;
     background-image: url("imagens/abra-sua-conta.webp");
@@ -412,14 +415,113 @@ header #menu {
 
 #botao-abra-conta:hover {
     transition: 0.6s;
-    background-color: #e8f5e3;
+    background-color: #97ca83;
 }
 
 
 /*-------Serviços---------*/
+#outras-solucoes{
+    padding: 0 15px 50px 15px;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
 
+#outras-solucoes article{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    width: 20%;
+    padding: 22px;
+    border: 1px solid #d7e5d2;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+#outras-solucoes article p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#outras-solucoes article h3{
+    color: #1a3f23;
+    font-size: 16px;
+}
+#outras-solucoes article:hover{
+    box-shadow: 2px 10px 29px 5px rgba(110, 255, 52, 0.3);
+    transform: translateY(-5px);
+    transition: 0.5s;
+    border-top: 2px solid #348051;
+    border-bottom: 2px solid #348051;
+}
 /* ----------Rodapé-------*/
 footer{
-    height: 20vh;
-    background-color: #3FA110;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+    background-color: #4b745a;
+    color: #ffffff;
+}
+
+#footer-img{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #90bd90;
+}
+
+footer a:hover{
+    transition: 0.6s;
+    text-decoration: underline;
+}
+
+#endereco{
+    padding: 50px 0 0 0 ;
+    text-align: left;
+}
+
+#icones-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icones-redesocial{
+    margin-top: 20px;
+    background-color: #d8ffd8;
+    width: 40px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+.icones-redesocial:hover{
+    transition: 0.8s;
+    transform: scale(1.05);
+}
+
+#linkedin:hover{
+    background-color: rgb(107, 176, 255);
+}
+
+#X:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+#insta:hover{
+    background-color: rgb(223, 93, 255);
+}
+
+#youtube:hover{
+    background-color: rgb(255, 82, 82);
+}
+
+#tiktok:hover{
+    background-color: rgb(155, 30, 30);
 }
