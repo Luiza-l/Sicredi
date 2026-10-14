@@ -1,246 +1,425 @@
+
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/*
- 🟢 Verde — #3FA110
- 🟩 Verde escuro — #146E37
- ⚪ Branco — #FFFFFF
-*/
-
-
-
-a {
-    color: rgb(0, 0, 0);
-}
-
+/* --------Navbar-------- */
 header {
-    background-color: #3FA110;
+    background-color: #348051;
     width: 100%;
     height: 100px;
     display: flex;
     position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     align-items: center;
+    justify-content: center;
     gap: 30px;
-    justify-content: ROW;
 }
 
-
-#logo {
+header #logo {
     width: 150px;
     margin-left: 30px;
-
 }
 
-#lupa {
-    width: 70px;
-    margin-left: 30px;
-    cursor: pointer;
-    margin-left: 30px;
+header h1 {
+    color: #fff;
 }
 
-#menu {
-    width: 40px;
-    margin-left: 30px;
-    cursor: pointer;
-}
-
-a {
+header a {
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 30px;
     color: #fff;
     text-decoration: none;
-
 }
 
-a:hover {
+header a:hover {
     transition: 0.9s;
     text-decoration: underline;
 }
 
-button {
+header button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #3FA110;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    width: 150px;
     background-color: #fff;
+    width: 150px;
+    height: 50px;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 12x;
+    font-size: 12px;
     box-shadow: 0 0 10px rgb(38, 192, 17);
-
 }
 
-button:hover {
+header button:hover {
     background-color: transparent;
-    transition: 0.4s;
-    border: 2px rgb(221, 255, 221);
     color: #fff;
+    border: 2px solid rgb(221, 255, 221);
     text-decoration: underline;
-
+    transition: 0.4s;
 }
 
-select {
+header select {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #3FA110;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    width: 150px;
     background-color: #fff;
+    width: 150px;
+    height: 50px;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 12x;
-    box-shadow: 0 0 10px rgb(38, 192, 17);
+    font-size: 12px;
     text-align: center;
+    box-shadow: 0 0 10px rgb(38, 192, 17);
 }
 
-select:hover {
+header select:hover {
     background-color: transparent;
-    transition: 0.4s;
-    border: 2px rgb(221, 255, 221);
     color: #fff;
+    border: 2px solid rgb(221, 255, 221);
     text-decoration: underline;
+    transition: 0.4s;
 }
 
-#criar {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+header #criar {
     color: #fafff8;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    width: 150px;
     background-color: #3FA110;
-    border: none;
-    cursor: pointer;
-    font-size: 12x;
-    box-shadow: 0 0 10px rgb(11, 107, 0);
     text-align: center;
+    box-shadow: 0 0 10px rgb(11, 107, 0);
 }
 
-#criar:hover {
+header #criar:hover {
     background-color: #fafff8;
-    transition: 0.4s;
-    border: 2px rgb(221, 255, 221);
     color: #004e00;
-    text-decoration: underline;
 }
 
-h1 {
-    color: #fff;
+header #lupa {
+    width: 70px;
+    margin-left: 30px;
+    cursor: pointer;
 }
 
-/*----banner sessão 1------*/
-#banner {
-    display: flex;
-    background-color: #348051;
-    background-repeat: repeat;
-    background-size: cover;
-}
-
-#div-caminhao {
-    display: flex;
-    align-items: center;
-    color: #65D930;
-    gap: 10px;
-}
-
-#div-caminhao p {
-    padding-top: 35px;
-    font-weight: 700;
-}
-
-#div-caminhao img {
+header #menu {
     width: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/* -----------Banner: Seção 1----------- */
+#banner {
+    background-color: #348051;
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px;
+    display: flex;
 }
 
 #divtexto {
-    padding: 0 10px 0 50px;
-    width: 700px;
-    height: 70vh;
-    color: white;
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    padding: 35px 40px 30px 50px;
     display: flex;
-    text-align: start;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+#div-caminhao {
+    color: #65D930;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#div-caminhao img {
+    width: 45px;
+}
+
+#divtexto #div-caminhao p {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 #divtexto h2 {
-    font-size: 47px;
-    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-#divtexto p {
-    font-size: 20px;
+#divtexto  p {
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
 
 .botoes {
     display: flex;
     gap: 20px;
-    text-align: center;
 }
 
 .botoes button {
-    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #173623;
+    background-color: #fff;
     width: 25%;
     height: 45px;
-    text-align: center;
-    border-radius: 15px;
-    border: none;
     padding: 10px;
+    border: none;
+    border-radius: 15px;
     cursor: pointer;
-    box-shadow: -5px 7px 21px 1px rgba(0, 0, 0, 0.151);
     font-size: 15px;
+    text-align: center;
+    box-shadow: -5px 7px 21px 1px rgba(0, 0, 0, 0.151);
 }
 
 #botao-abrirconta {
     background-color: #173623;
-    color: white;
-}
-
-#botao-abrirconta:hover {
-    transition: 0.6s;
-    background-color: rgb(93, 167, 58);
-    color: white;
+    color: #fff;
 }
 
 .botoes button:hover {
-    transition: 0.6s;
-    border: solid rgb(255, 255, 255) 2px;
     background-color: rgb(93, 167, 58);
-    color: white;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
     transform: translateY(-5px);
+    transition: 0.6s;
+}
+
+#informacoes-banner {
+    margin-top: 45px;
+    display: flex;
+}
+
+#informacoes-banner div {
+    width: 33%;
+    padding: 0 18px;
+}
+
+#informacoes-banner #primeira-info {
+    padding-left: 0;
+}
+
+#informacoes-banner h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#divtexto #informacoes-banner p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.com-borda {
+    border-left: 1px solid #8ab49a;
+}
+
+#divimg {
+    width: 50%;
+    height: 100%;
 }
 
 #divimg img {
-    width: 720px;
-    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
     border-radius: 100% 0% 47% 53% / 0% 100% 0% 100%;
     box-shadow: -14px 10px 15px 2px rgba(0, 0, 0, 0.15);
-
 }
 
-/*motivos pra escolher o sicredi - sessão 2*/
+/* ---------Sobre: Seção 2------------*/
+#secao-sobre {
+    background-color: #f0f8ec;
+    padding: 55px 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subtitulo-sobre {
+    color: #3FA110;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+}
 
 #titulo-sobre {
+    color: #173623;
+    font-size: 36px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-#sobre-nos-container {
+#container-imagem-sobre {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#imagem-sobre {
+    width: 90%;
+    border-radius: 16px;
+}
+
+
+#sobre-nos-container {
+    width: 90%;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
 }
 
 .card-sobre {
-    background-color: grey;
+    background-color: #fff;
+    width: 20%;
+    flex-grow: 1;
+    padding: 22px;
+    border: 1px solid #d7e5d2;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-sobre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(23, 54, 35, 0.18);
+    transition: 0.5s;
+    border-left: 2px solid #348051;
+    border-right: 2px solid #348051;
+}
+
+.icone-card {
+    background-color: #e7f5df;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.icone-card img {
+    width: 28px;
+    height: 28px;
+}
+
+.card-sobre h3 {
+    color: #173623;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-sobre p {
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 #botao-sobre {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #173623;
+    color: #fff;
+    width: 220px;
+    padding: 14px;
+    margin-top: 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#botao-sobre:hover {
+    background-color: rgb(93, 167, 58);
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transform: translateY(-5px);
+    transition: 0.6s;
+}
+
+/* ---------Abra sua conta------------*/
+#abra-sua-conta {
+    width: 77.4%;
+    height: 600px;
+    margin: 70px 11.3%;
+    background-color: #087b0b;
+    background-image: url("imagens/abra-sua-conta.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#conteudo-abra-conta {
+    width: 48%;
+    padding-left: 60px;
+}
+
+#chamada-abra-conta {
+    color: #b8f0a2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#conteudo-abra-conta h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#descricao-abra-conta {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+#botao-abra-conta {
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+    color: #23830f;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao-abra-conta:hover {
+    transition: 0.6s;
+    background-color: #e8f5e3;
+}
+
+
+/*-------Serviços---------*/
+
+/* ----------Rodapé-------*/
+footer{
+    height: 20vh;
+    background-color: #3FA110;
 }

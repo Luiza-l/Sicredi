@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3FA110;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header #logo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header button {
+    color: #3FA110;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(38, 192, 17);
+}
+
+header select {
+    color: #3FA110;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+header #criar {
+    color: #fff;
+    background-color: #3FA110;
+    box-shadow: 0 0 10px rgb(11, 107, 0);
+}
+
+header #lupa {
+    width: 70px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+header #menu {
+    width: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 100px;
+}
+
+/* ---banner */
+#apresentacao-sobre {
+    background-color: #eef7ea;
+    padding: 70px;
+}
+
+#texto-apresentacao {
+    width: 65%;
+}
+
+.subtitulo {
+    color: #3FA110;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+#texto-apresentacao h2 {
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+
+.descricao-apresentacao {
+    color: #385343;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ----História--- */
+#nossa-historia {
+    padding: 75px 7%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#imagem-historia {
+    width: 50%;
+}
+
+#texto-historia {
+    width: 50%;
+}
+
+#imagem-historia img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+#texto-historia h2 {
+    font-size: 38px;
+    margin-bottom: 22px;
+}
+
+.descricao-historia {
+    color: #4b5d50;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+/* ----Números do Sicredi--- */
+#numeros-sicredi {
+    display: flex;
+}
+
+#conteudo-numeros {
+    width: 50%;
+    padding: 70px 10px;
+}
+
+#conteudo-numeros h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.paragrafo-numeros {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+#quadrado-numeros {
+    background-color: #d9ffe1;
+    width: 50%;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numero-card {
+    width: 50%;
+    padding: 25px;
+}
+
+.numero-card strong {
+    color: #238b00;
+    font-size: 44px;
+    font-weight: normal;
+}
+
+.numero-card span {
+    color: #000;
+    display: block;
+    font-size: 20px;
+    margin: 6px 0 20px;
+}
+
+.numero-card p {
+    color: #222;
+    font-size: 15px;
+    font-style: italic;
+}
