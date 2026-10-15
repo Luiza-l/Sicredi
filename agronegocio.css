@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* --------Navbar-------- */
 header {
     background-color: #348051;
@@ -247,7 +249,7 @@ header #menu {
 
 #subtitulo-sobre {
     color: #3FA110;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 12px;
@@ -255,7 +257,7 @@ header #menu {
 
 #titulo-sobre {
     color: #173623;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -355,7 +357,7 @@ header #menu {
 #botao-sobre:hover {
     background-color: rgb(93, 167, 58);
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #244727;
     text-decoration: none;
     transform: translateY(-5px);
     transition: 0.6s;
@@ -367,7 +369,7 @@ header #menu {
     height: 400px;
     margin: 70px 11.3%;
     background-color: #087b0b;
-    background-image: url("imagens/abra-sua-conta.webp");
+    background-image: url("im/abra-sua-conta.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -461,18 +463,33 @@ header #menu {
 }
 /* ----------Rodapé-------*/
 footer{
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    height: 50vh;
-    background-color: #4b745a;
+    padding: 35px 20px;
+    background-color: #3FA110;
     color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #footer-img{
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+#footer-img img{
+    width: 190px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
 footer a{
+    margin: 0;
     text-decoration: none;
     color: #90bd90;
 }
@@ -482,18 +499,37 @@ footer a:hover{
     text-decoration: underline;
 }
 
+#direitos-autorais{
+    margin: 0 0 18px 0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-align: center;
+}
+
 #endereco{
-    padding: 50px 0 0 0 ;
-    text-align: left;
+    margin: 25px 0 0 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
 }
 
 #icones-container{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 .icones-redesocial{
-    margin-top: 20px;
+    height: 40px;
+    margin: 0;
     background-color: #d8ffd8;
     width: 40px;
     padding: 5px;
@@ -507,21 +543,21 @@ footer a:hover{
 }
 
 #linkedin:hover{
-    background-color: rgb(107, 176, 255);
+    background-color: #0A66C2;
 }
 
 #X:hover{
-    background-color: rgb(119, 119, 119);
+    background-color: #8f8c8c;
 }
 
 #insta:hover{
-    background-color: rgb(223, 93, 255);
+    background-color: #E1306C;
 }
 
 #youtube:hover{
-    background-color: rgb(255, 82, 82);
+    background-color: #FF0000;
 }
 
 #tiktok:hover{
-    background-color: rgb(155, 30, 30);
+    background-color: #25F4EE;
 }
