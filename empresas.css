@@ -225,16 +225,16 @@ header h1 {
 
 .paragrafo{
     font-size: 25px;
-    width: 65%;
-    padding: 200px;
-    padding-bottom:60px;
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 150px;
     
     
 }
 
 #padaria{
-    align-items: end;
-    width: 35%;
+
+    width: 50%;
     padding-top: 200px;
 
 
@@ -270,17 +270,35 @@ header h1 {
 }
 
 .soluçoes{
+    justify-content: center;
+    gap: 30px;
     display: flex;
     text-align: center;
-   margin: 100px;
+
 }
 
+#container-solucoes{
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#solucoes-titulo{
+    font-size: 15px;
+    color: #004e00;
+    text-align: center;
+}
+
+#solucoes-p{
+    margin-top: 10px;
+    text-align: center  ;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
 .card{
     text-align: center;
         width: 800px;
         height: 470px;
         background-color:#2d551d;
-        margin: 15px;
+       
         display: inline-block;
         color: rgb(213, 226, 210);
         border-radius: 30px; 
